@@ -9,7 +9,7 @@ input.onPinPressed(TouchPin.P0, function () {
                 # . . . #
                 `)
             basic.setLedColor(0xff0000)
-            music.playMelody("C - C - C - D D ", 200)
+            music.playMelody("C - C - C - D D ", 500)
             music.playTone(523, music.beat(BeatFraction.Breve))
             basic.showLeds(`
                 # # # # #
@@ -46,6 +46,35 @@ input.onPinPressed(TouchPin.P0, function () {
                 # # # # #
                 # # # # #
                 `)
+            basic.clearScreen()
+            basic.showLeds(`
+                . . . . .
+                . . . . .
+                . . . . .
+                . . . . .
+                . . . . .
+                `)
+            basic.showLeds(`
+                . # . # .
+                # # # # #
+                # # # # #
+                . # # # .
+                . . # . .
+                `)
+            basic.showLeds(`
+                # . . # .
+                . # . . #
+                . . . . #
+                # . . # .
+                . # . . .
+                `)
+            basic.showLeds(`
+                . . . . #
+                # . . . .
+                . . . . .
+                . . . . #
+                # . . . .
+                `)
             basic.showLeds(`
                 . . . . .
                 . . . . .
@@ -62,8 +91,8 @@ input.onPinPressed(TouchPin.P0, function () {
                 . # . . .
                 `)
             basic.setLedColor(0x00ff00)
-            music.playMelody("E B C5 A B G A F ", 120)
-            music.playMelody("E D G F B A C5 B ", 120)
+            music.playMelody("E B C5 A B G A F ", 500)
+            music.playMelody("E D G F B A C5 B ", 500)
             basic.showLeds(`
                 # # # # #
                 . . . . #
@@ -120,7 +149,7 @@ input.onButtonPressed(Button.A, function () {
             # . . . #
             `)
         basic.setLedColor(0xff0000)
-        music.playMelody("C - C - C - D D ", 200)
+        music.playMelody("C - C - C - D D ", 500)
         music.playTone(523, music.beat(BeatFraction.Breve))
         basic.showLeds(`
             # # # # #
@@ -157,6 +186,35 @@ input.onButtonPressed(Button.A, function () {
             # # # # #
             # # # # #
             `)
+        basic.clearScreen()
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # . # .
+            # # # # #
+            # # # # #
+            . # # # .
+            . . # . .
+            `)
+        basic.showLeds(`
+            # . . # .
+            . # . . #
+            . . . . #
+            # . . # .
+            . # . . .
+            `)
+        basic.showLeds(`
+            . . . . #
+            # . . . .
+            . . . . .
+            . . . . #
+            # . . . .
+            `)
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -173,8 +231,8 @@ input.onButtonPressed(Button.A, function () {
             . # . . .
             `)
         basic.setLedColor(0x00ff00)
-        music.playMelody("E B C5 A B G A F ", 120)
-        music.playMelody("E D G F B A C5 B ", 120)
+        music.playMelody("E B C5 A B G A F ", 500)
+        music.playMelody("E D G F B A C5 B ", 500)
         basic.showLeds(`
             # # # # #
             . . . . #
@@ -221,7 +279,7 @@ input.onButtonPressed(Button.A, function () {
     basic.turnRgbLedOff()
 })
 input.onButtonPressed(Button.AB, function () {
-	
+    pins.digitalWritePin(DigitalPin.P1, 1)
 })
 input.onButtonPressed(Button.B, function () {
     if (randint(1, 10) == 2) {
@@ -233,7 +291,7 @@ input.onButtonPressed(Button.B, function () {
             # . . . #
             `)
         basic.setLedColor(0xff0000)
-        music.playMelody("C - C - C - D D ", 200)
+        music.playMelody("C - C - C - D D ", 500)
         music.playTone(523, music.beat(BeatFraction.Breve))
         basic.showLeds(`
             # # # # #
@@ -270,6 +328,35 @@ input.onButtonPressed(Button.B, function () {
             # # # # #
             # # # # #
             `)
+        basic.clearScreen()
+        basic.showLeds(`
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            . . . . .
+            `)
+        basic.showLeds(`
+            . # . # .
+            # # # # #
+            # # # # #
+            . # # # .
+            . . # . .
+            `)
+        basic.showLeds(`
+            # . . # .
+            . # . . #
+            . . . . #
+            # . . # .
+            . # . . .
+            `)
+        basic.showLeds(`
+            . . . . #
+            # . . . .
+            . . . . .
+            . . . . #
+            # . . . .
+            `)
         basic.showLeds(`
             . . . . .
             . . . . .
@@ -286,8 +373,8 @@ input.onButtonPressed(Button.B, function () {
             . # . . .
             `)
         basic.setLedColor(0x00ff00)
-        music.playMelody("E B C5 A B G A F ", 120)
-        music.playMelody("E D G F B A C5 B ", 120)
+        music.playMelody("E B C5 A B G A F ", 500)
+        music.playMelody("E D G F B A C5 B ", 500)
         basic.showLeds(`
             # # # # #
             . . . . #
