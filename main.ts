@@ -279,7 +279,7 @@ input.onButtonPressed(Button.A, function () {
     basic.turnRgbLedOff()
 })
 input.onButtonPressed(Button.AB, function () {
-    pins.digitalWritePin(DigitalPin.P1, 1)
+	
 })
 input.onButtonPressed(Button.B, function () {
     if (randint(1, 10) == 2) {
@@ -418,5 +418,6 @@ input.onButtonPressed(Button.B, function () {
             . . . . .
             `)
     }
+    pins.digitalWritePin(DigitalPin.P1, 1)
     basic.turnRgbLedOff()
 })
