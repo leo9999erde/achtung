@@ -1,7 +1,9 @@
-let reset = 0
 let block = 0
+let reset = 0
 let zähler = 0
 input.onPinPressed(TouchPin.P0, function () {
+    control.waitForEvent(block, 0)
+    block = 1
     if (randint(1, 5) == 2) {
         basic.showLeds(`
             # . . . #
@@ -140,10 +142,12 @@ input.onPinPressed(TouchPin.P0, function () {
             `)
     }
     basic.turnRgbLedOff()
-    block += 1
+    block = 0
     zähler += 1
 })
 input.onButtonPressed(Button.A, function () {
+    control.waitForEvent(block, 0)
+    block = 1
     if (randint(1, 10) == 2) {
         basic.showLeds(`
             # . . . #
@@ -282,13 +286,15 @@ input.onButtonPressed(Button.A, function () {
             `)
     }
     basic.turnRgbLedOff()
-    block += 1
+    block = 0
     zähler += 1
 })
 input.onButtonPressed(Button.AB, function () {
-	
+    control.reset()
 })
 input.onButtonPressed(Button.B, function () {
+    control.waitForEvent(block, 0)
+    block = 1
     if (randint(1, 2) == 1) {
         basic.setLedColor(0x00ff00)
         basic.showString("Ja")
@@ -297,6 +303,7 @@ input.onButtonPressed(Button.B, function () {
         basic.showString("Nein")
     }
     basic.turnRgbLedOff()
+    block = 0
 })
 basic.forever(function () {
     if (reset) {
