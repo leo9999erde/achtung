@@ -4,7 +4,7 @@
     "description": "",
     "dependencies": {
         "core": "*",
-        "radio": "*"
+        "wentilator": "github:leo9999erde/wentilator#master"
     },
     "files": [
         "main.blocks",
